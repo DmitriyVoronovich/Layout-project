@@ -23,12 +23,12 @@ export const Button:React.FC<IconPropsType> = (props: IconPropsType) => {
 };
 
 const StyledButton = styled.button<ButtonPropsType>`
-background-color: ${props => props.color || 'red'};
+  background-color: ${props => props.color || 'red'};
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  
-  
+
+
 `
 
 const Link = styled.a`

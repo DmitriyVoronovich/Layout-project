@@ -6,6 +6,9 @@ import img1 from '../../../assets/image/dev.png';
 import img2 from '../../../assets/image/girl.png'
 import {Theme} from "../../../styled/Theme";
 import {Information} from "./Information";
+import {Button} from "../../../components/Button";
+import {Simulate} from "react-dom/test-utils";
+import blur = Simulate.blur;
 
 export const Main = () => {
     return (
@@ -17,6 +20,9 @@ export const Main = () => {
                         <Img src={img1}/>
                         <Img src={img2}/>
                     </ImgWrapper>
+                    <StyledFigure>
+                        <span>Fast & Safe Delivery</span>
+                    </StyledFigure>
                 </ImgContainer>
                 <InformationContainer>
                     <div>
@@ -25,6 +31,7 @@ export const Main = () => {
                         <Link>Register</Link>
                     </div>
                     <Information/>
+                    <Button name={'arroyDown'} viewBox={'0 0 50 50'} color={'rgba(72, 50, 220, 1)'}/>
                 </InformationContainer>
             </Container>
         </StyledMain>
@@ -34,7 +41,7 @@ export const Main = () => {
 const StyledMain = styled.section`
   ${Container} {
     max-width: 1092px;
-    padding-right: 3.4vw;
+    padding-right: 3vw;
     display: flex;
   }
 `
@@ -58,6 +65,28 @@ const ImgWrapper = styled.div`
   bottom: 10px;
 `
 
+const StyledFigure = styled.div`
+  position: absolute;
+  bottom: 34px;
+  right: -125px;
+  width: 288px;
+  height: 70px;
+  background: linear-gradient(-60deg, transparent 35px, #FFAE00 0);
+  display: flex;
+  align-items: center;
+  padding-left: 30px;
+
+  span {
+    color: #FFF;
+    text-align: center;
+    font-family: Poppins, serif;
+    font-size: 21px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+  }
+`
+
 const Img = styled.img`
   border-radius: 10px;
 `
@@ -68,7 +97,7 @@ const InformationContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: end;
-  
+
 `
 
 const Link = styled.a`

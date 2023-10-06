@@ -34,12 +34,19 @@ const StyledInformation = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-left: 10.9vw;
+  margin-left: 8.4vw;
   margin-top: 8.74vh;
-  margin-right: 4.9vw;
+  margin-right: 3.8vw;
+  margin-bottom: 8.5px;
+  
+  span:nth-child(4) {
+    align-self: start;
+    padding-left: 45px;
+  }
 `
 
 const StiledTitle = styled.h1`
+  width: 419px;
   color: ${Theme.colors.primaryFont};
   text-align: center;
   font-family: Poppins, serif;
@@ -119,6 +126,8 @@ const StyledButton = styled.button`
     line-height: normal;
   }
 `
+
+
 
 const Field = styled.input`
   width: 328px;
