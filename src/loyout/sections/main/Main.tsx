@@ -9,6 +9,7 @@ import {Information} from "./Information";
 import {Button} from "../../../components/Button";
 import {Simulate} from "react-dom/test-utils";
 import blur = Simulate.blur;
+import {Icon} from "../../../components/icon/Icon";
 
 export const Main = () => {
     return (
@@ -32,6 +33,16 @@ export const Main = () => {
                     </div>
                     <Information/>
                     <Button name={'arroyDown'} viewBox={'0 0 50 50'} color={'rgba(72, 50, 220, 1)'}/>
+                    <ArrayWrapper>
+                        <Icon iconId={'arrayLeft'} viewBox={'0 0 20 20'} height={'19px'} width={'30px'}/>
+                        <Icon iconId={'arrayRight'} viewBox={'0 0 0 20'} height={'19px'} width={'30px'}/>
+                    </ArrayWrapper>
+                    <div>
+                        <Icon iconId={'track'} width={'54'} height={'38'} viewBox={'0 8 55 25'}/>
+                        <span>Track Your Order</span>
+
+                    </div>
+
                 </InformationContainer>
             </Container>
         </StyledMain>
@@ -97,7 +108,56 @@ const InformationContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: end;
+  position: relative;
 
+  
+  div:last-child {
+    margin-top: 46.2px;
+    position: relative;
+    margin-right: 150px;
+    
+    &:before {
+      position: absolute;
+      content: '';
+      width: 131.5px;
+      height: 2px;
+      background-color: #FFAE00;
+      top: 35px;
+      left: 73px;
+    }
+
+    &:after {
+      position: absolute;
+      content: '';
+      width: 131.5px;
+      height: 2px;
+      background-color: #FFAE00;
+      top: 35px;
+      right: 80px;
+    }
+    
+   span {
+     width: 130px;
+     left: 75px;
+     color: #000;
+     text-align: center;
+     font-family: Poppins, serif;
+     font-size: 15px;
+     font-style: normal;
+     font-weight: 400;
+     line-height: normal;
+     position: absolute;
+   }
+  }
+`
+
+const ArrayWrapper = styled.div`
+  position: absolute;
+  max-width: 100px;
+  top: 96%;
+  right: 86%;
+  display: flex;
+  align-items: center;
 `
 
 const Link = styled.a`
