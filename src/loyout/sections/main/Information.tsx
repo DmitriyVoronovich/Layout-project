@@ -46,7 +46,7 @@ const StyledInformation = styled.div`
 `
 
 const StiledTitle = styled.h1`
-  width: 419px;
+  width: 429px;
   color: ${Theme.colors.primaryFont};
   text-align: center;
   font-family: Poppins, serif;

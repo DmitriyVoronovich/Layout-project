@@ -2,23 +2,31 @@ import './App.css';
 import {Header} from "./loyout/header/Header";
 import {Main} from "./loyout/sections/main/Main";
 import styled from "styled-components";
+import {AboutUs} from "./loyout/sections/about-us/AboutUs";
 
 
 function App() {
     return (
-        <div className="App">
+        <StyledApp>
             <HeaderContainer>
                 <Header/>
                 <Main/>
             </HeaderContainer>
-        </div>
+            <AboutUs/>
+        </StyledApp>
     );
 }
 
 export default App;
 
+const StyledApp = styled.div`
+  margin: 0 auto;
+`
+
 const HeaderContainer = styled.div`
-  width: 100%;
   height: 100%;
-display: flex;
+  display: flex;
+  max-width: 1366px;
+  min-height: 100%;
+  margin: 0 auto;
 `

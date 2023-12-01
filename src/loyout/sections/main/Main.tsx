@@ -7,11 +7,12 @@ import img2 from '../../../assets/image/girl.png'
 import {Theme} from "../../../styled/Theme";
 import {Information} from "./Information";
 import {Button} from "../../../components/Button";
-import {Simulate} from "react-dom/test-utils";
-import blur = Simulate.blur;
 import {Icon} from "../../../components/icon/Icon";
 
+
+
 export const Main = () => {
+
     return (
         <StyledMain>
             <Container>
@@ -32,15 +33,14 @@ export const Main = () => {
                         <Link>Register</Link>
                     </div>
                     <Information/>
-                    <Button name={'arroyDown'} viewBox={'0 0 50 50'} color={'rgba(72, 50, 220, 1)'}/>
+                    <Button name={'arroyDown'} viewBox={'5 0 50 50'} color={'rgba(72, 50, 220, 1)'}/>
                     <ArrayWrapper>
                         <Icon iconId={'arrayLeft'} viewBox={'0 0 20 20'} height={'19px'} width={'30px'}/>
-                        <Icon iconId={'arrayRight'} viewBox={'0 0 0 20'} height={'19px'} width={'30px'}/>
+                        <Icon iconId={'arrayRight'} viewBox={'37 0 20 20'} height={'19px'} width={'30px'}/>
                     </ArrayWrapper>
                     <div>
                         <Icon iconId={'track'} width={'54'} height={'38'} viewBox={'0 8 55 25'}/>
                         <span>Track Your Order</span>
-
                     </div>
 
                 </InformationContainer>

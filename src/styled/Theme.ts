@@ -3,6 +3,7 @@ export const Theme = {
         primaryFont: '#000',
         secondaryFont: '#FFAE00',
         thirdFont: '#4832DC',
+        textFont: '#858585',
 
         primaryBg: 'rgba(9, 15, 29, 1)',
         secondaryBg: 'var(--background-background-4, #131E3A)'
