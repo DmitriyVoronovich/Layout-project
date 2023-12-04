@@ -25,7 +25,7 @@ export const Header = () => {
 const StyledHeader = styled.header`
   ${Container} {
     max-width: 274px;
-    //border: 1px solid red;
+    border: 1px solid red;
     display: flex;
     flex-direction: column;
     color: #ec146f;
