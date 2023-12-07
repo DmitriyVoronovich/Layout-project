@@ -73,8 +73,8 @@ export const AboutUs = () => {
 };
 
 const StyledAboutUs = styled.section`
-  //border: 1px solid red;
-  margin: 40px 82px 107px;
+  border: 1px solid red;
+  margin: 40px auto 107px;
 `
 
 const SectionInformationContainer = styled.div`
