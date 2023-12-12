@@ -4,6 +4,7 @@ import {Main} from "./loyout/sections/main/Main";
 import styled from "styled-components";
 import {AboutUs} from "./loyout/sections/about-us/AboutUs";
 import {InputSection} from "./loyout/sections/input/Input";
+import {Services} from "./loyout/sections/services/Services";
 
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
             </HeaderContainer>
             <AboutUs/>
             <InputSection/>
+            <Services/>
         </StyledApp>
     );
 }
