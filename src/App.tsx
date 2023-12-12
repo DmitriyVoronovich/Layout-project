@@ -3,8 +3,9 @@ import {Header} from "./loyout/header/Header";
 import {Main} from "./loyout/sections/main/Main";
 import styled from "styled-components";
 import {AboutUs} from "./loyout/sections/about-us/AboutUs";
-import {InputSection} from "./loyout/sections/input/Input";
+import {InputSection} from "./loyout/sections/second-section/Input";
 import {Services} from "./loyout/sections/services/Services";
+import {Work} from "./loyout/sections/second-section/work";
 
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
             <AboutUs/>
             <InputSection/>
             <Services/>
+            <Work/>
         </StyledApp>
     );
 }

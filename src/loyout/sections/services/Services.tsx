@@ -87,7 +87,6 @@ export const Services = () => {
 };
 
 const StyledServices = styled.section`
-  border: 1px solid red;
   margin: 82px auto 0;
 `
 

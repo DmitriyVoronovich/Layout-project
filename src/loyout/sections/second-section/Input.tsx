@@ -22,7 +22,7 @@ export const InputSection = () => {
 const StyledInput = styled.section`
   max-width: 83.47vw;
   height: 415px;
-  border: 1px solid red;
+  border: 1px solid rgba(17, 17, 21, 0);
   background-image: url(${deliv});
   margin: 0 auto;
 `
