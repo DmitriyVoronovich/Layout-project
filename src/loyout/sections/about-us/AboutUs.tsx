@@ -7,28 +7,15 @@ import box from '../../../assets/image/box.png';
 import world from '../../../assets/image/world.png';
 import {Theme} from "../../../styled/Theme";
 import grop3 from '../../../assets/image/Group3.png'
+import {INFORMATION} from "../../../constant/constant";
 
 type ContentNumberPropsType = {
     color: string
 }
 
 export const AboutUs = () => {
-    const information = [
-        {
-            number: '01', name: 'FAST DELIVERY',
-            description: 'Lorem Ipsum is simply dummy text of the printing', color: '#2765C8'
-        },
-        {
-            number: '02', name: 'SECURED SERVICE',
-            description: 'Lorem Ipsum is simply dummy text of the printing', color: '#37D679'
-        },
-        {
-            number: '03', name: 'WORLDWIDE SHIPPING',
-            description: 'Lorem Ipsum is simply dummy text of the printing', color: '#FFAE00'
-        },
-    ];
 
-    const content = information.map(item => {
+    const content = INFORMATION.map(item => {
         return (
             <Content>
                 <ContentNumber color={item.color}>
